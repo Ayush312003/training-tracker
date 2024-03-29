@@ -48,7 +48,7 @@ const EditModal = ({ closeModal, show, fetchData, training, children }) => {
         showToast({ error: "Some Important Field(s) may be empty!" });
       } else {
         const response = await fetch(
-          `http://localhost:5000/admin/trainings/${training.id}`,
+          `http://localhost:8000/admin/trainings/${training.id}`,
           {
             method: "PUT",
             headers: {

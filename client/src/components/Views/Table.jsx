@@ -18,7 +18,7 @@ const Table = ({ tableName, trainingId }) => {
 
       if (tableName == "Applied Users") {
         fetch(
-          `http://localhost:5000/admin/trainings/${trainingId}/applicants`,
+          `http://localhost:8000/admin/trainings/${trainingId}/applicants`,
           options
         )
           .then((response) => {
@@ -34,7 +34,7 @@ const Table = ({ tableName, trainingId }) => {
           });
       } else {
         fetch(
-          `http://localhost:5000/admin/trainings/${trainingId}/interested`,
+          `http://localhost:8000/admin/trainings/${trainingId}/interested`,
           options
         )
           .then((response) => {

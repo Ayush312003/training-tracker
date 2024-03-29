@@ -53,7 +53,7 @@ const Card = ({
       credentials: "include",
     };
     const response = await fetch(
-      `http://localhost:5000/user/trainings/${trainingData.id}/apply`,
+      `http://localhost:8000/user/trainings/${trainingData.id}/apply`,
       options
     );
     const data = await response.json();
@@ -86,7 +86,7 @@ const Card = ({
       credentials: "include",
     };
     const response = await fetch(
-      `http://localhost:5000/user/trainings/${trainingData.id}/interested`,
+      `http://localhost:8000/user/trainings/${trainingData.id}/interested`,
       options
     );
     const data = await response.json();

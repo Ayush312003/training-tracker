@@ -22,7 +22,7 @@ function LandingPage() {
 
   const checkToken = async () => {
     try {
-      const response = await fetch("http://localhost:5000/checkToken", {
+      const response = await fetch("http://localhost:8000/checkToken", {
         credentials: "include",
       });
 

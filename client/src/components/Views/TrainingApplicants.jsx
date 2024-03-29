@@ -15,7 +15,7 @@ const TrainingApplicants = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/training/${trainingId}`,
+        `http://localhost:8000/admin/training/${trainingId}`,
         {
           credentials: "include",
         }

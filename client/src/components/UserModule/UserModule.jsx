@@ -93,7 +93,7 @@ const UserModule = () => {
 
   const fetchAppliedTrainings = async () => {
     try {
-      const response = await fetch("http://localhost:5000/checkToken", {
+      const response = await fetch("http://localhost:8000/checkToken", {
         credentials: "include",
       });
 
@@ -105,7 +105,7 @@ const UserModule = () => {
         showToast({ success: result });
         navigate("/login");
       } else {
-        fetch("http://localhost:5000/user/getUserApplied", {
+        fetch("http://localhost:8000/user/getUserApplied", {
           credentials: "include",
         })
           .then((response) => {
@@ -134,7 +134,7 @@ const UserModule = () => {
   const fetchUnEnrolledTraining = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/user/getUserUnEnrolledTraining",
+        "http://localhost:8000/user/getUserUnEnrolledTraining",
         {
           credentials: "include",
         }
@@ -149,7 +149,7 @@ const UserModule = () => {
   };
 
   const fetchInterestedTraining = () => {
-    fetch("http://localhost:5000/user/getUserInterested", {
+    fetch("http://localhost:8000/user/getUserInterested", {
       credentials: "include",
     })
       .then((response) => {

@@ -17,7 +17,7 @@ const TrainingProgramList = ({ trainings, fetchData }) => {
   const deleteTrainingFromDb = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/trainings/${training.id}`,
+        `http://localhost:8000/admin/trainings/${training.id}`,
         {
           method: "DELETE",
           credentials: "include",

@@ -42,7 +42,7 @@ const Modal = ({ handleClose, show, fetchData, children }) => {
         showToast({ error: "Training date cannot be in the past" });
       } else {
         const response = await fetch(
-          "http://localhost:5000/admin/createTraining",
+          "http://localhost:8000/admin/createTraining",
           {
             method: "POST",
             headers: {

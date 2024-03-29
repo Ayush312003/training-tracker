@@ -56,7 +56,7 @@ function Admin() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/checkToken", {
+      const response = await fetch("http://localhost:8000/checkToken", {
         credentials: "include",
       });
 
@@ -67,7 +67,7 @@ function Admin() {
         showToast({ success: result });
         navigate("/login");
       } else {
-        fetch("http://localhost:5000/admin/trainings", {
+        fetch("http://localhost:8000/admin/trainings", {
           credentials: "include",
         })
           .then((response) => response.json())
@@ -82,7 +82,7 @@ function Admin() {
   };
 
   const fetchCount = () => {
-    fetch("http://localhost:5000/admin/usercount", {
+    fetch("http://localhost:8000/admin/usercount", {
       credentials: "include",
     })
       .then((response) => response.json())

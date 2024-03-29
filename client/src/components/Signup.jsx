@@ -73,7 +73,7 @@ const Signup = () => {
     if (Object.keys(newErrors).length === 0) {
       try {
         const response = await axios.post(
-          "http://localhost:5000/auth/signup",
+          "http://localhost:8000/auth/signup",
           credentials,
           {
             headers: {
