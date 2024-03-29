@@ -1,0 +1,493 @@
+/* html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(148, 230, 145);
+  overflow: hidden;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  #77fa69
+  #27ac1f
+} */
+
+.adminBody {
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  /* background-image: url('./background.jpg'); */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    56,
+    88,
+    61,
+    0.3
+  ); /* Adjust the color and transparency of the overlay */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 2%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+.calenderContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 5%;
+  margin-top: 7%;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  border: 2px solid #77fa69;
+  box-shadow: 0 0 10px #77fa6980;
+  z-index: 2;
+  font-family: "roboto", sans-seirf;
+}
+
+:global(.react-calendar) {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ) !important; /* Set the background color of the entire calendar */
+  color: #27ac1f;
+  border-radius: 15px;
+  padding: 2px;
+  border: 2px solid #ffffff !important;
+  z-index: 2;
+  font-family: "roboto", sans-seirf;
+}
+:global(div .react-calendar__tile) {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Set the background color of the tiles */
+  color: #27ac1f; /* Set the default text color */
+  font-weight: 700;
+  font-family: "roboto", sans-seirf;
+  border-radius: 10px;
+}
+:global(.react-calendar__tile--active) {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ) !important; /* Set the background color of the selected date */
+  color: #fff; /* Set the text color of the selected date */
+  border: 3px solid #77fa69 !important;
+}
+:global(.react-calendar__tile:hover) {
+  background-color: #ccc; /* Set the background color when hovering */
+  color: #000000; /* Set the text color when hovering */
+}
+/* For newer versions of react-calendar */
+:global(
+    .react-calendar_navigation_next2-button,
+    .react-calendar_navigation_prev2-button
+  ) {
+  background-color: #4285f4; /* Set the background color of the navigation buttons */
+  color: #ffffff; /* Set the text color of the navigation buttons */
+}
+
+/* For older versions of react-calendar */
+:global(
+    .react-calendar_navigation_next-button,
+    .react-calendar_navigation_prev-button
+  ) {
+  background-color: #4285f4; /* Set the background color of the navigation buttons */
+  color: #ffffff; /* Set the text color of the navigation buttons */
+}
+#welcomeTxt {
+  font-size: 35px;
+  font-family: "roboto", sans-seirf;
+  margin-left: 5%;
+  margin-bottom: -1%;
+  color: #27ac1f;
+  margin-top: 5%;
+  z-index: 55555;
+}
+#trainingDiv {
+  position: relative;
+  width: 60vw;
+  height: 60vh;
+  margin-top: 5px;
+  margin-left: 10%;
+  /* margin-bottom: 20%; */
+  z-index: 5;
+}
+.trainingContainer {
+  /* position: fixed; */
+  width: 100%; /*Adjust the width of the program list container as needed */
+  height: 100%; /* Set a fixed height for the program list container */
+  overflow-y: auto;
+  overflow-x: hidden; /* Enable vertical scrolling if the content exceeds the height */
+  border: 0px solid #ffffff;
+  padding: 10px;
+  z-index: 2;
+}
+
+.program_item {
+  border: 2px solid #ffffff;
+  background-color: #f4fff4;
+  border-radius: 30px;
+  box-shadow: 0 0 2px #27ac1f80;
+  width: 97%;
+  padding: 5px;
+  padding-left: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  font-family: "roboto", sans-seirf;
+  z-index: 2;
+}
+.program_item:hover {
+  box-shadow: 0 0 15px #27ac1f80;
+}
+.trainingContainer::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: 2px solid #27ac1f;
+}
+
+.trainingContainer::-webkit-scrollbar-thumb {
+  background-color: #27ac1f;
+  border-radius: 30px;
+}
+.t_name > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.viewButton {
+  margin-left: 5px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "roboto", sans-seirf;
+  background-color: #77fa69;
+  border-radius: 45px;
+  border: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  z-index: 2;
+}
+.viewButton:hover {
+  background-color: #08b908;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.editButton {
+  margin-left: 5px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "roboto", sans-seirf;
+  background-color: #77fa69;
+  border-radius: 45px;
+  border: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  z-index: 2;
+}
+.editButton:hover {
+  background-color: #08b908;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.deleteButton {
+  margin-left: 5px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "roboto", sans-seirf;
+  background-color: #77fa69;
+  border-radius: 45px;
+  border: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  z-index: 2;
+}
+
+.deleteButton:hover {
+  background-color: #d71919;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* .trainingButton:hover {
+  background-color: rgb(207, 206, 206);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+} */
+.trainingButtonDiv {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.modal {
+  position: fixed;
+  /* position: relative; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal_main {
+  box-sizing: border-box;
+  max-width: 80%;
+  width: 100%;
+  max-height: 80%;
+  height: 100%;
+  /* overflow: auto; */
+  /* margin-left: 15%;
+  margin-top: 5%; */
+  background: linear-gradient(90deg, #77fa69 30%, #ffffff 70%);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;
+  margin: 4% auto;
+}
+.createTrainingButton {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 9%;
+  margin-bottom: 10%;
+  width: 15%;
+  height: 10%;
+  background-color: #77fa69;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "roboto", sans-seirf;
+  border-radius: 45px;
+  border: 0px;
+  box-shadow: 0 0 10px #00000080;
+
+  z-index: 2;
+}
+
+.createTrainingButton:hover {
+  background-color: #27ac1f;
+  box-shadow: 0 0 10px #77fa69cc;
+  cursor: pointer;
+}
+
+.inputDiv label {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "roboto", sans-seirf;
+}
+.inputDiv input {
+  width: 45%;
+  height: 5vh;
+  margin-bottom: 1.5%;
+  margin-top: 0.5%;
+  background-color: #d9d9d9;
+  border: 0px solid #01b901;
+  border-radius: 8px;
+  color: black;
+  font-size: 18px;
+  font-family: "roboto", sans-seirf;
+  caret-color: red;
+  box-shadow: 0px 0px 3px #767676;
+  /* padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px; */
+
+  padding: 7px;
+  transition: border-color 0.3s;
+}
+.inputDiv input:focus {
+  color: #27ac1f;
+  border-color: #27ac1f;
+  box-shadow: 0px 0px 4px #27ac1f;
+}
+
+.inputDiv .dateStart {
+  width: 100%;
+  margin-bottom: 6%;
+}
+.inputDiv .dateEnd {
+  width: 100%;
+}
+
+.dateDiv {
+  display: inline-block;
+  margin-right: 3.5%;
+}
+
+.inputDiv .description {
+  height: 18vh;
+  vertical-align: top;
+  caret-color: red;
+}
+.inputDiv {
+  position: relative;
+  top: -15%;
+  left: 50%;
+  margin-bottom: 5px;
+}
+.inputButton {
+  position: relative;
+  left: 83%;
+  bottom: 10%;
+}
+.formCloseButton {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  font-family: "roboto", sans-seirf;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: gainsboro;
+  border: 0px;
+  padding: 10px;
+}
+
+.formCloseButton:hover {
+  background-color: gainsboro;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.formSubmitButton {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  font-family: "roboto", sans-seirf;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #67ef60;
+  border: 0px;
+  padding: 10px;
+}
+
+.formSubmitButton:hover {
+  background-color: #27ac1f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.formTitle1 {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-size: 75px;
+  font-family: "roboto", sans-seirf;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.formTitle2 {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-size: 75px;
+  font-family: "roboto", sans-seirf;
+  color: #196a06;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.adminFooter {
+  position: fixed;
+  bottom: 0;
+  margin-top: 5%;
+  width: 100%;
+  /* height: 13%; */
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid;
+  z-index: 2;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 13%; */
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255, 0);
+  z-index: 2;
+}
+
+.unauthorizedAccessContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 64px 0px;
+  cursor: default;
+  gap: 8px;
+}
+
+.unauthorizedAccessContainer > .errorCode {
+  font-size: 5rem;
+}
+
+.unauthorizedAccessContainer > .errorText {
+  font-size: 2rem;
+}
+
+.okButton {
+  background-color: #228b22;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 180px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-top: 64px;
+}
+
+.userCount {
+  margin-left: 5vw;
+  display: flex;
+  justify-content: start;
+  font-size: 1.5rem;
+  color: #27ac1f;
+}
+
+.editButtonDisabled {
+  display: none;
+}

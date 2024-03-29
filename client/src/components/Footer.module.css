@@ -1,0 +1,36 @@
+.topContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 0% 10%;
+  height: 10vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding > img {
+  height: 64px;
+  width: 64px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottomContainer {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #606060;
+  font-family: "Roboto", sans-serif;
+  color: #606060;
+}

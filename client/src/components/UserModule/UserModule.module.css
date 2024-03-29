@@ -1,0 +1,136 @@
+.welcome {
+  margin-top: 55px;
+  margin-left: 97px;
+  font-size: 24px;
+}
+.container {
+  width: 1157px;
+  height: 235px;
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  top: 36px;
+  left: 97px;
+  width: 1157px;
+  height: 235px;
+  background-color: #cccccc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text {
+  color: #000000;
+  font-size: 24px;
+}
+
+.subText {
+  color: #000000;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #27ac1f;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.svgImage {
+  position: absolute;
+  top: 174px;
+  right: 0;
+  transform: translate(80%, -50%); /* To center the image half inside the box */
+  z-index: 1; /* Ensure the image appears above the box */
+}
+
+/* Liner 53 - 67 might break at different scren sizes */
+.carouselHeader {
+  width: 100%;
+  margin: 0% 2%;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: default;
+}
+
+.emptyCarousel {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px;
+  font-size: 1.3rem;
+}
+
+.carouselContainer {
+  max-width: 1550px;
+  margin: 0 auto; /* This will center the container horizontally */
+  /* display: flex; */
+  margin-top: 100px;
+  justify-content: center; /* This will center the carousel within the container */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Add a subtle shadow */
+}
+
+.tableButtons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 64px 24px 24px 24px;
+}
+
+.tableButtons > button {
+  padding: 24px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.activeButton {
+  color: white;
+  background-color: #3aac17;
+}
+
+.inactiveButton {
+  color: black;
+  background-color: lightgrey;
+}
+
+.tainingTable {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
+.unauthorizedAccessContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 64px 0px;
+  cursor: default;
+  gap: 8px;
+}
+
+.unauthorizedAccessContainer > .errorCode {
+  font-size: 5rem;
+}
+
+.unauthorizedAccessContainer > .errorText {
+  font-size: 2rem;
+}
+
+.okButton {
+  background-color: #228b22;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 180px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-top: 64px;
+}

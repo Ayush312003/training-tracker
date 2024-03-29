@@ -1,0 +1,77 @@
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 316px;
+  text-wrap: wrap;
+  font-family: sans-serif;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 1px 3px 1px;
+}
+
+.container > img {
+  width: 300px;
+  height: 168px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  height: 48px;
+  padding: 0px 8px;
+  margin: 5px 0px;
+}
+
+.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px 8px;
+  margin: 5px 0px;
+}
+
+.infoContainer {
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 8px;
+}
+
+.buttons > button {
+  background-color: #27ac1f;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 180px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.buttons > button:hover {
+  background-color: white;
+  color: #27ac1f;
+  border: 2px solid #27ac1f;
+}
+
+.buttons > button.disabledButton {
+  box-shadow: none;
+  background-color: grey;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
